@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trivia</title>
+	  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+
+
+<body>
+  <h2 class="Header">INFORMATICS Quiz!</h2>
+    
+     <div class="time"> You have <span id="time">00:30</span> seconds to answer !</div>
+  
+	<table style="width:1000px">
+	<tr>
+	  <td>
+	  	<div>
+	  		<p class="question">1. In what year was Google launched on the web?</p>
+
+	    	<ul>
+	    	<input class="answer" type="radio" name="q1" value="1">
+	        <label id="correctString1">1998</label>
+	    	<br>
+	        <input class="answer" type="radio" name="q1" value="0">
+	        <label>1999</label>
+	        <br>
+	        <input class="answer" type="radio" name="q1" value="0">
+	        <label>2000</label>
+	        <br>
+	        <input class="answer" type="radio" name="q1" value="0">
+	        <label>1997</label>
+    		</ul>
+	  	</div>
+	  </td>
+	  <td>
+	  	<div>
+	  		<p class="question">2. What is the country top-level domain of Belgium?</p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q2" value="0">
+	        <label>The .de domain</label>
+	        <br>
+	        <input class="answer" type="radio" name="q2" value="1">
+	        <label id="correctString2">The .be domain</label>
+	        <br>
+	        <input class="answer" type="radio" name="q2" value="0">
+	        <label>The .ua domain</label>
+	        <br>
+	        <input class="answer" type="radio" name="q2" value="0">
+	        <label>The .usa domain</label>
+	    	</ul>
+	  	</div>
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	  	<div>
+	  		<p class="question">3. Which unit is an indication for the sound quality of MP3?</p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q3" value="0">
+	        <label>HI-FI</label>
+	        <br>
+	        <input class="answer" type="radio" name="q3" value="1">
+	        <label id="correctString3">Kbps</label>
+	        <br>
+	        <input class="answer" type="radio" name="q3" value="0">
+	        <label>Ultra Sound</label>
+	        <br>
+	        <input class="answer" type="radio" name="q3" value="0">
+	        <label>blue ray</label>
+	    	</ul>
+		</div>
+	  </td>
+	  <td>
+	  	<div>
+	  		<p class="question">4. In computing what is Ram short for?</p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q4" value="0">
+	        <label>Rapid Access Memory</label>
+	        <br>
+	        <input class="answer" type="radio" name="q4" value="1">
+	        <label id="correctString4">	Random Access Memory</label>
+	        <br>
+	        <input class="answer" type="radio" name="q4" value="0">
+	        <label>Revolutions at minute</label>
+	        <br>
+	        <input class="answer" type="radio" name="q4" value="0">
+	        <label>REM Losing my religion</label>
+    		</ul>
+    		</div>
+	  	</td>
+	  	</tr>
+	  	<tr>
+	  		<td>
+	  		<div>
+	  			<p class="question">5. What is the name of the network of computers from which the Internet has emerged?</p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q5" value="0">
+	        <label>WWW</label>
+	        <br>
+	        <input class="answer" type="radio" name="q5" value="1">
+	        <label id="correctString5">Arpanet</label>
+	        <br>
+	        <input class="answer" type="radio" name="q5" value="0">
+	        <label>Internet</label>
+	        <br>
+	        <input class="answer" type="radio" name="q5" value="0">
+	        <label>LAN</label>
+	    	</ul>
+		</div>
+	  </td>
+	  <td>
+	  	<div>
+	  		<p class="question">6. In which Nintendo DS game do you have to raise a puppy as well as possible?</p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q6" value="0">
+	        <label>Nintencats</label>
+	        <br>
+	        <input class="answer" type="radio" name="q6" value="1">
+	        <label id="correctString6">Nintendogs</label>
+	        <br>
+	        <input class="answer" type="radio" name="q6" value="0">
+	        <label>DS Ninjas</label>
+	        <br>
+	        <input class="answer" type="radio" name="q6" value="0">
+	        <label>DS Dogs</label>
+	    	</ul>
+		</div>
+	  </td>
+	  <td>
+	 
+	</tr>
+	</table>
+<br/>
+  <div class="submitter">
+          <input class="quizSubmit" id="submitButton" onClick="submitQuiz()"
+          type="submit" value="Submit" />
+    </div>
+  
+<!--show only wrong answers on submit-->
+    <div class="quizAnswers" id="correctAnswer1"></div>
+	<div class="quizAnswers" id="correctAnswer2"></div>
+    <div class="quizAnswers" id="correctAnswer3"></div>
+    <div class="quizAnswers" id="correctAnswer4"></div>
+    <div class="quizAnswers" id="correctAnswer5"></div>
+    <div class="quizAnswers" id="correctAnswer6"></div>
+
+<!--show score upon submit-->
+    <div>
+    	<h2 class="quizScore" id="userScore"></h2>
+    </div>
+	</div>
+
+ <footer class="page-footer">
+        <div class="footer-copyright">
+            <div class="container">
+                © 2017 Copyright KOM
+               
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- JQUERY CDN -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <!-- JQUERY UI CDN -->
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+  
+  
+      
+    <!-- TRIVIA JS -->
+    <script src="assets/javascript/trivia.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+/* css here */
+
+body{
+  background-image: url("../images/space.jpg");
+     min-height: 500px;
+    /* Set background image to fixed (don't scroll along with the page) */
+    background-attachment: fixed;
+    /* Center the background image */
+    background-position: center;
+    /* Set the background image to no repeat */
+    background-repeat: no-repeat;
+    /* Scale the background image to be as large as possible */
+    background-size: cover;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  
+}
+
+
+
+p.question {
+  font-family: Arial, sans-serif;
+	  font-size:18px;
+  color: white;
+  margin-bottom:0px;
+}
+
+h2.Header {
+  font-family: Arial, sans-serif;
+  font-weight:normal;
+  font-size:25px;
+  line-height: 27px;
+  margin: 24px 0 12px 0;
+  padding: 0 0 4px 0;
+  border-bottom: 1px solid #a2a2a2;
+  color: white;
+  text-align: center;
+}
+
+h2.quizScore{
+  font-family: Arial, sans-serif;
+  font-size:25px;
+  color: white;
+}
+div.time{
+  color: red;
+  text-align: center;
+  padding-bottom: 20px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+div.quizAnswers{
+  font-family: Arial, sans-serif;
+  font-size:16px;
+  color: white;
+  padding: 4px 0 4px 0;
+}
+
+label {
+  font-family: Arial, sans-serif;
+  font-size:14px;
+  color: white;
+  vertical-align:top;
+}
+br {
+  color: white;
+
+}
+    
+input.answer[type="radio"] {
+  margin-bottom: 20px;
+}
+
+input.quizSubmit[type="submit"] {
+  -webkit-background-clip: border-box;
+  -webkit-background-origin: padding-box;
+  -webkit-background-size: auto;
+  -webkit-transition-delay: 0s, 0s;
+  -webkit-transition-duration: 0.2s, 0.2s;
+  -webkit-transition-property: color, background-color;
+  -webkit-transition-timing-function: ease, ease;
+  box-shadow: rgba(0, 0, 0, 0.498039) 0px 0px 5px 0px;
+  color: #ffffff;
+  background-color: darkgrey;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  text-transform:uppercase;
+  height:35px;
+  width:85px;
+  border: 1px solid #5E5E5E;
+  border-radius:5px;
+  
+ }
+
+input.quizSubmit[type="submit"]:hover {
+  color: black;
+  background: grey;
+  text-decoration: none;
+}
+
+table {
+
+	border:1px solid #BDBDBD;
+  border-radius:5px;
+  padding:10px;
+  padding-left:25px;
+  box-shadow: rgba(0, 0, 0, 0.498039) 0px 0px 1px 0px;
+}
+
+footer {
+  color: white;
+  text-align: center;
+}
+
+th {
+  
+}
+
+tr {
+  
+}
+
+td {
+
+}
+
+.submitter {
+	  width:85px;
+}
+
+.hide {
+	  display:none;
+}
+
+
+
+
